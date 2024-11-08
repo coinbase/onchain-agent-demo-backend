@@ -2,7 +2,7 @@
 name = "agent-backend"
 version = "0.1.0"
 description = ""
-authors = ["Alec Chen <93971719+0xAlec@users.noreply.github.com>"]
+authors = ["Your Name <first.last@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
