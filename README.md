@@ -9,6 +9,16 @@ A web app that enables onchain interactions through a conversational UI using Ag
 
 This project combines a Next.js frontend with a Python backend to create an AI agent capable of performing onchain operations on Base. The agent uses GPT-4 for natural language understanding and AgentKit for onchain interactions.
 
+## Modules
+
+- The `agent` module contains functions for interacting with the onchain agent.
+    - `initialize_agent` creates (or loads) an agent from CDP Wallet Data.
+    - `run_agent` invokes the agent.
+    - `handle_action_agent` handles agent actions - in our demo, we just save the addresses of deployed NFTs and ERC-20s to a SQLite database, but you can customize this behavior for your application.
+- The `agent.custom_actions` module contains an example for adding custom actions to the agent.
+    - `get_latest_block` is a custom action we've added that retrieves the latest Base Sepolia block information for the agent.
+    - You can add additional custom actions to this module, following our example.
+
 ## Key Features
 
 - **AI-Powered Chat Interface**: Interactive chat interface for natural language interactions onchain
