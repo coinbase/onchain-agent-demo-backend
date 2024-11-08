@@ -42,7 +42,6 @@ This project combines a Next.js frontend with a Python backend to create an AI a
 
 - [Rust](https://www.rust-lang.org/tools/install)
 - [Poetry](https://python-poetry.org/docs/#installation)
-- [Bun](https://bun.sh) for package management
 
 ## Environment Setup
 
@@ -77,6 +76,19 @@ The application exposes a chat endpoint that accepts natural language commands f
 curl -X POST http://localhost:5000/api/chat \
   -H "Content-Type: application/json" \
   -d '{"input": "deploy a new ERC-20 token", "conversation_id": 0}'
+```
+
+
+Retrieve a list of NFTs deployed by the agent:
+
+```bash
+curl http://localhost:5000/nfts 
+```
+
+Retrieve a list of ERC-20s deployed by the agent:
+
+```bash
+curl http://localhost:5000/tokens
 ```
 
 ## License
