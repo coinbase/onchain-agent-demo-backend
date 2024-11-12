@@ -40,6 +40,7 @@ def initialize_agent():
     # Export and store the updated wallet data back to environment variable
     wallet_data = agentkit.export_wallet()
     add_wallet_info(json.dumps(wallet_data))
+    print("Exported wallet info", wallet_data, flush=True)
 
     # Initialize CDP Agentkit Toolkit and get tools.
     cdp_toolkit = CdpToolkit.from_cdp_agentkit_wrapper(agentkit)
