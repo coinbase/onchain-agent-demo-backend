@@ -12,10 +12,10 @@ langchain = "^0.3.6"
 langchain-openai = "^0.2.5"
 langgraph = "^0.2.42"
 pydantic = "^2.9.2"
-cdp-sdk = "^0.10.0"
+cdp-sdk = "^0.10.3"
 python-dotenv = "^1.0.1"
-cdp-langchain = "^0.0.2"
-cdp-agentkit-core = "^0.0.2"
+cdp-langchain = "^0.0.4"
+cdp-agentkit-core = "^0.0.3"
 flask-cors = "^5.0.0"
 
 
